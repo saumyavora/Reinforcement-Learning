@@ -4,6 +4,7 @@ Find video of the training process [here](https://youtu.be/jCeMeUJZ0eQ).
 
 Find the Google Slides Link to the project presentation [here](https://drive.google.com/file/d/1J8X4L6R88ELukyMlByT263JKVz08Lw3e/view?usp=sharing).
 
+
 ## Thermostat controller controlling the temperature. 
 ![Thermostat controller](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/Images/thermostat_control.png) 
 
@@ -13,13 +14,28 @@ Find the Google Slides Link to the project presentation [here](https://drive.goo
 ## DDPG RL Agent controller controlling the temperature. 
 ![RL controller](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/Images/RL_Control.png) 
 
+## PG RL Agent controller controlling the temperature. 
 
+## TD3 RL Agent controller controlling the temperature. 
+
+## DQN RL Agent controller controlling the temperature. 
 
 ## Steps to recreate models:
-1. Run [sldemo_househeat_data.m](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/sldemo_househeat_data.m), and make sure variables exist on the workspace. 
+1. Open the DDPG Folder and Run [sldemo_househeat_data.m](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/sldemo_househeat_data.m), and make sure variables exist on the workspace. 
+
 2. Run [house_thermostat.slx](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/house_thermostat.slx) to generate a the plots for the control using a regular thermostat. 
+
 3. Run [house_PID.slx](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/house_PID.slx) to generate a the plots for the control using a Discrete PID controller.
-4. Open the [ddpg_live(new).mlx](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/ddpg_live(new).mlx) live notebook. Start running each cell individually. (Make sure the variable - training is set to true in the notebook.)
+
+4. [ddpg_live(new).mlx](https://github.com/akmenon1996/TemperatureControl-ReinforcementLearning/blob/master/ddpg_live(new).mlx) live notebook. Start running each cell individually. (Make sure the variable - training is set to true in the notebook.)
+
+5. Open the Final Folder and first Run [sldemo_househeat_data.m](https://github.com/saumyavora/Reinforcement-Learning/blob/master/Final/sldemo_househeat_data.m), [rlwatertank.slx](https://github.com/saumyavora/Reinforcement-Learning/blob/master/Final/rlwatertank.slx) again, 
+[pg.m](https://github.com/saumyavora/Reinforcement-Learning/blob/master/Final/PG.m) to generate a the plots for the control using a Policy Gradient.
+[DDPG.m](https://github.com/saumyavora/Reinforcement-Learning/blob/master/Final/DDPG.m) to generate a the plots for the control using a Deep Deterministic Policy Gradient.
+[Td3.m](https://github.com/saumyavora/Reinforcement-Learning/blob/master/Final/Td3.m)to generate a the plots for the control using a Twin Delayed Deep Deeterministic Policy Gradient.
+
+6. Open the DQN Folder and run first Run [sldemo_househeat_data.m](https://github.com/saumyavora/Reinforcement-Learning/blob/master/DQN/sldemo_househeat_data.m), [rlwatertank.slx](https://github.com/saumyavora/Reinforcement-Learning/blob/master/DQN/rlwatertank.slx) again, 
+[dqn.m](https://github.com/saumyavora/Reinforcement-Learning/blob/master/Final/PG.m) to generate a the plots for the control using a Deep Q Network.
 
 ### Warnings:
 Make sure to have the following toolkits installed to be able to recreate these simulations successfully:
